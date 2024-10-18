@@ -28,8 +28,8 @@ int dram_init(void)
 	return 0;
 }
 static iomux_v3_cfg_t const uart1_pads[] = {
-	MX6_PAD_UART1_TX_DATA__UART1_DCE_TX | MUX_PAD_CTRL(UART_PAD_CTRL),
-	MX6_PAD_UART1_RX_DATA__UART1_DCE_RX | MUX_PAD_CTRL(UART_PAD_CTRL),
+	MX6_PAD_UART1_TX_DATA__UART1_TXD | MUX_PAD_CTRL(UART_PAD_CTRL),
+	MX6_PAD_UART1_RX_DATA__UART1_RXD | MUX_PAD_CTRL(UART_PAD_CTRL),
 };
 static void setup_iomux_uart(void)
 {
