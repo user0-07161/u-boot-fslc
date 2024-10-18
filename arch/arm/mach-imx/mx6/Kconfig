@@ -49,14 +49,6 @@ config MX6SX
 	bool "i.MX 6SoloX SoC support"
 	select HAS_CAAM
 	select ROM_UNIFIED_SECTIONS
-config TARGET_MX6SLTOLINOPAGE2
-	bool "mx6sltolinopage2"
-	select BOARD_LATE_INIT
-	select DM
-	select DM_THERMAL
-	select KOBO_COMMON
-	depends on MX6SL
-	imply CMD_DM
 config MX6SLL
 	bool "i.MX 6SLL SoC support"
 	select ROM_UNIFIED_SECTIONS
@@ -395,7 +387,14 @@ config TARGET_MX6SLLEVK
 	select DM
 	select DM_THERMAL
 	imply CMD_DM
-
+config TARGET_MX6SLTOLINOPAGE2
+	bool "mx6sltolinopage2"
+	select BOARD_LATE_INIT
+	select DM
+	select DM_THERMAL
+	select KOBO_COMMON
+	depends on MX6SL
+	imply CMD_DM
 config TARGET_MX6SXSABRESD
 	bool "mx6sxsabresd"
 	depends on MX6SX
