@@ -7,10 +7,13 @@
 #include <asm/arch/clock.h>
 #include <asm/arch/crm_regs.h>
 #include <asm/arch/iomux.h>
-#include <asm/arch-mx6/imx-regs.h>
+#include <asm/arch/imx-regs.h>
 #include <asm/arch/mx6-pins.h>
 #include <asm/arch/sys_proto.h>
 #include <asm/gpio.h>
+#ifndef IOMUXC_SNVS_BASE_ADDR
+#define IOMUXC_SNVS_BASE_ADDR  IOMUXC_GPR_BASE_ADDR 
+#endif
 #include <asm/mach-imx/iomux-v3.h>
 #include <asm/mach-imx/boot_mode.h>
 #include <asm/io.h>
