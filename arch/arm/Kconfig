@@ -2023,6 +2023,7 @@ source "board/variscite/dart_6ul/Kconfig"
 source "board/vscom/baltos/Kconfig"
 source "board/phytium/durian/Kconfig"
 source "board/xen/xenguest_arm64/Kconfig"
+source "board/kobo/mx6slpage2/Kconfig"
 
 source "arch/arm/Kconfig.debug"
 
