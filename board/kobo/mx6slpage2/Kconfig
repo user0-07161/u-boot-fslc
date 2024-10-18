@@ -1,0 +1,9 @@
+if TARGET_MX6SLTOLINOPAGE2
+config SYS_BOARD
+	default "mx6slpage2"
+config SYS_VENDOR
+	default "kobo"
+config SYS_CONFIG_NAME
+	default "mx6slpage2"
+source "board/kobo/common/Kconfig"
+endif
