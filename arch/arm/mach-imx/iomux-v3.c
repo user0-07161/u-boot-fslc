@@ -52,7 +52,7 @@ void imx_iomux_v3_setup_pad(iomux_v3_cfg_t pad)
 #else
 	if (is_mx6ull() || is_mx6sll()) {
 		if (lpsr == IOMUX_CONFIG_LPSR) {
-			base = (void *)IOMUXC_SNVS_BASE_ADDR;
+			base = (void *)IOMUXC_GPR_BASE_ADDR;
 			mux_mode &= ~IOMUX_CONFIG_LPSR;
 		}
 	}
